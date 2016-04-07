@@ -176,16 +176,28 @@ TABLE STYLES
 	margin: 50px 0;
 }
 
-#portfolio {
+
+
+#portfolio, header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+
+
+header {
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
 }
 
 .card {
 	width: 50%;
 	margin: 0 0 40px;
 	padding: 0 5px;
+}
+
+.header {
+	width: auto;
 }
 
 .#portfolio p {
@@ -197,9 +209,25 @@ TABLE STYLES
 	width: 100%;
 }
 
-img {
+img, .profile-img {
 	width: 100%;
 }
+
+header:nth-child(0){
+	flex-grow: 2;
+}
+
+#contact p {
+	width: 70%;
+	margin: 10px auto;
+	font-size: 1.3em;
+}
+
+.contact-info {
+	margin: 30px auto;
+	font-size: 1.3em;
+}
+
 
 
 
