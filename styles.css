@@ -167,6 +167,8 @@ TABLE STYLES
 
 @media screen and (min-width: 720px){
 
+/* Nav */
+
 .nav {
 	display: flex;
 	justify-content: center;
@@ -191,7 +193,7 @@ TABLE STYLES
 	margin: 50px 0;
 }
 
-
+/* Portfolio */
 
 #portfolio {
 	display: flex;
@@ -220,6 +222,9 @@ TABLE STYLES
 img {
 	width: 100%;
 }
+
+/* Header */
+
 header{
 	overflow: auto;
 }
@@ -243,6 +248,8 @@ header{
 	display: block;
 }
 
+/* Contact */
+
 #contact p {
 	width: 70%;
 	margin: 10px auto;
@@ -254,6 +261,8 @@ header{
 	font-size: 1.3em;
 }
 
+/* Footer */
+
 .top {
 	display: none;
 }
@@ -262,6 +271,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
+	align-items: baseline;
 }
 
 .footer-nav {
@@ -269,17 +279,49 @@ header{
 	margin: 0;
 }
 
+}
 
+/******************
+COMPUTER STYLES
+********************/
+@media screen and (min-width: 1024px){
 
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	width: 90%;
+	margin: 50px auto;
+}
 
+#name, .nav {
+	margin: 0;
+}
 
+header {
+	width: 90%;
+	margin-bottom: 75px;
+}
 
+#portfolio {
+	width: 95%;
+	margin: 0 auto;
+	padding: 40px 2.5%;
+}
 
+.card {
+	width: 33%;
+	padding: 10px;
+}
 
+.footer {
+	width: 90%;
+	font-size: 1.1em;
+}
 
-
-
-
+.footer a {
+	font-size: .9em;
+}
 
 
 
