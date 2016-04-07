@@ -176,6 +176,30 @@ TABLE STYLES
 	margin: 50px 0;
 }
 
+#portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card {
+	width: 50%;
+	margin: 0 0 40px;
+	padding: 0 5px;
+}
+
+.#portfolio p {
+	width: 70%;
+}
+
+
+#portfolio h1 {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
 
 
 
