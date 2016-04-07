@@ -75,8 +75,20 @@ img {
 
 /* Header */
 
-header{
-	margin: 20px auto;
+.wrapper{
+	background: linear-gradient(rgba(150, 237, 245, .5) 30%, rgba(250, 255, 165, .5)),
+				transparent url("img/forest.jpeg") no-repeat center;
+	background-size: cover;
+	vertical-align: middle;
+	padding: 30px 0 50px;
+}
+
+header {
+	margin: 0 auto;
+}
+
+.profile {
+	color: white;
 }
 
 header p, #contact p {
@@ -227,6 +239,7 @@ img {
 
 header{
 	overflow: auto;
+	padding: 30px;
 }
 
 .profile {
@@ -300,7 +313,11 @@ COMPUTER STYLES
 
 header {
 	width: 90%;
-	margin-bottom: 75px;
+	padding: 30px 0px 75px;
+}
+
+.profile {
+	padding-right: 20px;
 }
 
 #portfolio {
