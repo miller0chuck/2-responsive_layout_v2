@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-	color: #FF6B40;
+	color: #2ecc66;
 }
 
 /******************
@@ -70,7 +70,8 @@ img {
 }
 
 .profile-img {
-	width: 70%;
+	width: 50%;
+	border-radius: 50%;
 }
 
 /* Header */
@@ -99,15 +100,20 @@ header p, #contact p {
 	font-size: 1.1em;
 }
 
-/* Portfolio */
+/* Content */
 
-#portfolio {
+.content {
 	background-color: white;
 }
 
 h1 {
 	color: rgba(0,0,0,.7);
-	margin: 10px auto 40px;
+	margin: 0 auto;
+	padding:  20px 30px 30px;
+}
+
+#photography h1 {
+	padding-top: 30px;
 }
 
 h2 {
@@ -115,7 +121,7 @@ h2 {
 	font-size: 1.3em;
 }
 
-#portfolio p {
+.content p {
 	line-height: 1.5em;
 	margin: 15px auto 25px;
 	font-weight: 400;
@@ -124,7 +130,7 @@ h2 {
 
 /* Contact */
 
-#contact, #portfolio {
+#contact, .content {
 	padding: 40px 0;
 }
 
@@ -134,7 +140,7 @@ h2 {
 	color: rgba(0,0,0,.6);
 }
 .contact-info a:hover {
-	color: #FF6B40;
+	color: #2ecc66;
 }
 
 .contact-info li {
@@ -148,8 +154,11 @@ footer {
 	width: 100%;
 }
 
-.footer {
+.footer, #photography h1 {
 	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.footer {
 	padding: 25px 0;
 	display: flex;
 	justify-content: space-between;
@@ -158,19 +167,59 @@ footer {
 	margin: 0 auto;
 }
 
+.footer .top {
+	margin: 5px 0;
+}
+
 .footer li {
 	color: rgba(0,0,0,.7);
 	font-weight: 900;
 
 }
 
-.footer a {
+#portfolio .top {
+	display: block;
+}
+
+.top {
 	text-transform: uppercase;
 	font-size: .8em;
+	font-weight: 900;
+	margin: 20px auto;
 }
 
 .footer-nav{
 	display: none;
+}
+
+.icon-list {
+	display: flex;
+	justify-content: center;
+}
+
+.icon-list li {
+	margin: 5px 0;
+	padding: 0px 15px;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.insta {
+  background-image: url(img/insta.svg);
+}
+a.github {
+  background-image: url(img/github.svg);
+}
+a.social:hover {
+  opacity: 1;
 }
 
 /******************
@@ -205,9 +254,9 @@ TABLE STYLES
 	margin: 50px 0;
 }
 
-/* Portfolio */
+/* Content */
 
-#portfolio {
+.content {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -222,43 +271,48 @@ TABLE STYLES
 }
 
 
-.#portfolio p {
+.content p {
 	width: 70%;
 }
 
 
-#portfolio h1 {
-	width: 100%;
+.content h1 {
+	width: 95%;
 }
 
 img {
 	width: 100%;
 }
 
+#photography h2 {
+	width: 95%;
+}
+
 /* Header */
 
 header{
-	overflow: auto;
 	padding: 30px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .profile {
 	width: 60%;
 	font-size:1.3em;
-	float: left;
 	text-align: left;
 
 }
 
 .profile-img {
-	width: 40%;
-	float: right;
+	width: 25%;
+	height: 40%;
+	margin: 0 30px;
 }
 
 .profile, .profile-img {
-	margin: 0;
 	padding: 5px;
-	display: block;
 }
 
 /* Contact */
@@ -276,7 +330,7 @@ header{
 
 /* Footer */
 
-.top {
+.footer .top {
 	display: none;
 }
 
@@ -320,10 +374,10 @@ header {
 	padding-right: 20px;
 }
 
-#portfolio {
+.content {
 	width: 95%;
 	margin: 0 auto;
-	padding: 40px 2.5%;
+	padding: 20px 2.5% 0;
 }
 
 .card {
